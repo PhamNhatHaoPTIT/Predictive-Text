@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.InputUI">
   <grid id="27dc6" binding="main_panel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="500" height="363"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -28,15 +28,17 @@
           <text value="Output"/>
         </properties>
       </component>
-      <component id="61def" class="javax.swing.JTextArea" binding="txt_output">
+      <scrollpane id="7508a">
         <constraints/>
-        <properties>
-          <columns value="32"/>
-        </properties>
-        <clientProperties>
-          <html.disable class="java.lang.Boolean" value="false"/>
-        </clientProperties>
-      </component>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="81cb2" class="javax.swing.JList" binding="words">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>

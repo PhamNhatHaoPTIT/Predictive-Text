@@ -1,9 +1,14 @@
 package utilities;
 
+import java.io.BufferedReader;
 import java.io.File;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
+import java.io.FileReader;
+import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
 
 public class DataHelper {
 
@@ -11,23 +16,29 @@ public class DataHelper {
 
     }
 
-    public String[] readAllXmlFile() throws Exception {
+    public String[] readAllXmlFile(String filePath) throws Exception {
         String content = "";
-        String filePath = "/home/haopn/Downloads/blogs";
         File folder = new File(filePath);
         File[] listOfFiles = folder.listFiles();
-
-        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 
         for(int i = 0; i < listOfFiles.length; i++) {
             String fileName = listOfFiles[i].getName();
             if(fileName.endsWith(".xml")) {
-                Document doc = dBuilder.parse(listOfFiles[i]);
-                doc.getDocumentElement().normalize();
-                content += doc.getElementsByTagName("post").item(0).getTextContent();
+                BufferedReader br = new BufferedReader(new FileReader(listOfFiles[i]));
+                String st;
+                while ((st = br.readLine()) != null) {
+                    content += st;
+                }
+
+                Pattern pattern = Pattern.compile("<post>(.*?)</post>");
+                Matcher matcher = pattern.matcher(content);
+                while (matcher.find()) {
+                    content += matcher.group(1);
+                }
+
             }
         }
+
         content = content.replace(".", " ")
                             .replace(",", " ")
                             .replace("?", " ")
@@ -56,6 +67,7 @@ public class DataHelper {
                             .replace("<", " ")
                             .replace(" - ", " ")
                             .replace("\"", " ");
+
         String[] words = content.split("\\s+");
         for(int i = 0; i < words.length; i++) {
             words[i] = words[i].toLowerCase();
