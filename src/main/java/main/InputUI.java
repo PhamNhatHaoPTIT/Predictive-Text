@@ -33,9 +33,6 @@ public class InputUI extends JFrame {
 
                     if( temp != null ) {                            // found word in trie
                         trie.getAllWordsInNode(result, temp, txt_input.getText(), "");
-                        if(result.size() == 0) {
-                            result.add(txt_input.getText());
-                        }
                         words.setListData(result.toArray());
                     }
 
@@ -52,7 +49,7 @@ public class InputUI extends JFrame {
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
                 String selectedValue = (String) words.getSelectedValue();
-                if(trie.searchNode(trie.getRoot(), selectedValue) != null) {
+                if(trie.search(trie.getRoot(), selectedValue) != false) {
                     JOptionPane.showMessageDialog(main_panel, "Word found");
                 }
             }
@@ -62,7 +59,7 @@ public class InputUI extends JFrame {
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
                 String word = txt_input.getText();
-                if(trie.searchNode(trie.getRoot(), word) == null) {
+                if(trie.search(trie.getRoot(), word) == false) {
                     JOptionPane.showMessageDialog(main_panel, "Word not found");
                 } else {
                     JOptionPane.showMessageDialog(main_panel, "Word found");
