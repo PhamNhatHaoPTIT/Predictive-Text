@@ -11,7 +11,7 @@ public class RunApp {
     public static void main(String[] args) throws Exception {
 
         DataHelper helper = new DataHelper();
-        String[] keys = helper.readAllXmlFile("/home/cpu12457/Downloads/blog");
+        String[] keys = helper.readAllXmlFile("/home/cpu12457/Downloads/blogs");
 
         Trie trie = Trie.getInstance();
 

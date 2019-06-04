@@ -10,30 +10,38 @@
       <component id="46b7b" class="javax.swing.JLabel">
         <constraints/>
         <properties>
-          <text value="Search"/>
+          <text value="Input text"/>
         </properties>
       </component>
       <component id="6e5a9" class="javax.swing.JTextField" binding="txt_input">
         <constraints/>
         <properties>
-          <columns value="32"/>
+          <columns value="22"/>
           <editable value="true"/>
           <enabled value="true"/>
           <horizontalAlignment value="2"/>
         </properties>
       </component>
-      <component id="3de0" class="javax.swing.JLabel">
+      <component id="9dcff" class="javax.swing.JButton" binding="btn_search">
         <constraints/>
         <properties>
-          <text value="Output"/>
+          <horizontalAlignment value="0"/>
+          <text value="Search"/>
+          <verticalAlignment value="0"/>
         </properties>
       </component>
-      <scrollpane id="7508a">
+      <component id="f062a" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <text value="Predictive"/>
+        </properties>
+      </component>
+      <scrollpane id="664da">
         <constraints/>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="81cb2" class="javax.swing.JList" binding="words">
+          <component id="eb1a4" class="javax.swing.JList" binding="words">
             <constraints/>
             <properties/>
           </component>

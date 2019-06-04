@@ -79,7 +79,7 @@ public class Trie {
         }
     }
 
-   public void printAllWords(ArrayList<String> result, TrieNode trieNode, String prefix, String str) {
+   public void getAllWordsInNode(ArrayList<String> result, TrieNode trieNode, String prefix, String str) {
         TrieNode current = trieNode;
         if(trieNode.children == null || trieNode.children.size() == 0) {
             return;
@@ -89,7 +89,7 @@ public class Trie {
         while (iterator.hasNext()) {
             TrieNode node = iterator.next();
             str += node.c;
-            printAllWords(result, node, prefix, str);
+            getAllWordsInNode(result, node, prefix, str);
             if(node.isLeaf) {
                 String temp = prefix + str;
                 result.add(temp);
