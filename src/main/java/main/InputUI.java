@@ -1,6 +1,5 @@
 package main;
 
-import org.apache.commons.lang.StringUtils;
 import trie.Trie;
 import trie.TrieNode;
 
@@ -44,25 +43,16 @@ public class InputUI extends JFrame {
             }
 
         });
-        words.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent mouseEvent) {
-                super.mouseClicked(mouseEvent);
-                String selectedValue = (String) words.getSelectedValue();
-                if(trie.search(trie.getRoot(), selectedValue) != false) {
-                    JOptionPane.showMessageDialog(main_panel, "Word found");
-                }
-            }
-        });
+
         btn_search.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
                 String word = txt_input.getText();
-                if(trie.search(trie.getRoot(), word) == false) {
-                    JOptionPane.showMessageDialog(main_panel, "Word not found");
-                } else {
+                if(trie.search(trie.getRoot(), word)) {
                     JOptionPane.showMessageDialog(main_panel, "Word found");
+                } else {
+                    JOptionPane.showMessageDialog(main_panel, "Word not found");
                 }
             }
         });

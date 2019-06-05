@@ -1,5 +1,7 @@
 package utilities;
 
+import trie.Trie;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -12,76 +14,83 @@ public class DataHelper {
 
     }
 
-    public String[] readAllXmlFile(String filePath) throws Exception {
-        String content = "";
+    public String[] removeSymbolText(String content) {
+        content = content.replace(".", " ")
+                .replace(",", " ")
+                .replace("?", " ")
+                .replace("!", " ")
+                .replace(":", " ")
+                .replace("&", " ")
+                .replace("\n", " ")
+                .replace("\t", " ")
+                .replace("'", "")
+                .replace("\\s+", " ")
+                .replace("(", " ")
+                .replace(")", " ")
+                .replace("/", " ")
+                .replace("+", " ")
+                .replace("=", " ")
+                .replace("_", " ")
+                .replace("%", " ")
+                .replace("^", " ")
+                .replace("*", " ")
+                .replace("|", " ")
+                .replace("[", " ")
+                .replace("]", " ")
+                .replace("{", " ")
+                .replace("}", " ")
+                .replace(">", " ")
+                .replace("<", " ")
+                .replace(" - ", " ")
+                .replace("\"", " ")
+                .replace("@", " ")
+                .replace("#", " ")
+                .replace("-", " ")
+                .replace(";", " ");
+
+        String[] words = content.split("\\s+");
+        return words;
+    }
+
+    public void readAllXmlFile(String filePath, Trie trie) throws Exception {
+
+        String content;
         File folder = new File(filePath);
-        File[] listOfFiles = folder.listFiles();           // get list file in folder
+        File[] listFiles = folder.listFiles();           // get list file in folder
 
-        for(int i = 0; i < listOfFiles.length; i++) {
+        for(int i = 0; i < listFiles.length; i++) {
 
-            String fileName = listOfFiles[i].getName();
+            String fileName = listFiles[i].getName();
 
             if(fileName.endsWith(".xml")) {             // only xml file
 
-                FileReader fileReader = new FileReader(listOfFiles[i]);
-                BufferedReader br = new BufferedReader(fileReader);
-                String st;
+                content = "";
+                FileReader fileReader = new FileReader(listFiles[i]);
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
+                String line;
 
-                while ((st = br.readLine()) != null) {
-                    content += st;
+                while ((line = bufferedReader.readLine()) != null) {
+                    content += line;
                 }
 
                 Pattern pattern = Pattern.compile("<post>(.*?)</post>");
                 Matcher matcher = pattern.matcher(content);
                 while (matcher.find()) {
-                    content += matcher.group(1);
+                    String temp = matcher.group(1);
+                    String[] words = removeSymbolText(temp);
+                    for(int j = 0; j < words.length; j++) {
+                        trie.insert(words[j].toLowerCase());
+                    }
                 }
 
 
                 fileReader.close();
-                br.close();
+                bufferedReader.close();
 
             }
 
         }
 
-
-
-        content = content.replace(".", " ")
-                            .replace(",", " ")
-                            .replace("?", " ")
-                            .replace("!", " ")
-                            .replace(":", " ")
-                            .replace("&", " ")
-                            .replace("\n", " ")
-                            .replace("\t", " ")
-                            .replace("'", "")
-                            .replace("\\s+", " ")
-                            .replace("(", " ")
-                            .replace(")", " ")
-                            .replace("/", " ")
-                            .replace("+", " ")
-                            .replace("=", " ")
-                            .replace("_", " ")
-                            .replace("%", " ")
-                            .replace("^", " ")
-                            .replace("*", " ")
-                            .replace("|", " ")
-                            .replace("[", " ")
-                            .replace("]", " ")
-                            .replace("{", " ")
-                            .replace("}", " ")
-                            .replace(">", " ")
-                            .replace("<", " ")
-                            .replace(" - ", " ")
-                            .replace("\"", " ");
-
-        String[] words = content.split("\\s+");
-        for(int i = 0; i < words.length; i++) {
-            words[i] = words[i].toLowerCase();
-        }
-
-        return words;
     }
 
 }
