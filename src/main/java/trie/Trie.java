@@ -28,22 +28,24 @@ public class Trie {
     }
 
     public void insert(String word) {
-        HashMap<Character, TrieNode> children = root.children;
+        //HashMap<Character, TrieNode> children = root.children;
+        TrieNode node = root;
         for(int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             TrieNode t;
-            if(children.containsKey(c)) {
-                t = children.get(c);
+            if(node.children.containsKey(c)) {
+                t = node.children.get(c);
             } else {
                 t = new TrieNode(c);
-                children.put(c, t);
+                node.children.put(c, t);
             }
-            children = t.children;
+            node = t;
             // set leaf node
-            if(i == word.length() - 1) {
-                t.isLeaf = true;
-            }
+//            if(i == word.length() - 1) {
+//                t.isLeaf = true;
+//            }
         }
+        node.isLeaf = true;
     }
 
     public TrieNode searchNode(TrieNode root, String word) {
@@ -80,8 +82,13 @@ public class Trie {
 
    public void getAllWordsInNode(ArrayList<String> result, TrieNode trieNode, String prefix, String str) {
         TrieNode current = trieNode;
-        if(trieNode.children == null || trieNode.children.size() == 0) {
+        if(trieNode.children == null || trieNode.children.isEmpty()) {
             return;
+        }
+        else{
+
+            System.out.println("ewouqeoiuq");
+            System.out.println(trieNode.children);
         }
 
         Iterator<TrieNode> iterator = current.children.values().iterator();

@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6bb7d2eb-56e6-4fdc-a82c-38a4a417320b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/InputUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/InputUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/RunApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/RunApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trie/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/DataHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/InputUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/InputUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/InputUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/InputUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/InputUI$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/InputUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/InputUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/RunApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/RunApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/trie/Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trie/Trie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/trie/TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trie/TrieNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/DataHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/DataHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Predictive Text.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Predictive Text.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,35 +22,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trie/TrieNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/trie/Trie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="90" column="29" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="79" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trie/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="84" column="57" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/InputUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="197">
+              <caret line="33" column="46" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#414#1449#0" expanded="true" />
-                <element signature="e#656#664#0" expanded="true" />
-                <element signature="e#836#844#0" expanded="true" />
-                <element signature="e#1285#1293#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1941#2434#0" expanded="true" />
-                <element signature="e#2433#2434#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,17 +51,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/InputUI.form">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utilities/DataHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="-176">
               <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,19 +67,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/RunApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="70" lean-forward="true" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,11 +96,11 @@
         <option value="$PROJECT_DIR$/src/main/java/utilities/StringProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/trie/TrieNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/InputUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/trie/Trie.java" />
         <option value="$PROJECT_DIR$/src/main/java/utilities/DataHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/RunApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/InputUI.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/trie/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/RunApp.java" />
       </list>
     </option>
   </component>
@@ -152,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +157,14 @@
             <path>
               <item name="Predictive-Text" type="b2602c69:ProjectViewProjectNode" />
               <item name="Predictive-Text" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Predictive-Text" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Predictive-Text" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -196,6 +172,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,17 +246,20 @@
       <workItem from="1559614275679" duration="1842000" />
       <workItem from="1559630093708" duration="5837000" />
       <workItem from="1559699485723" duration="3378000" />
+      <workItem from="1559726063253" duration="625000" />
+      <workItem from="1559727417055" duration="111000" />
+      <workItem from="1559728659540" duration="2259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46429000" />
+    <option name="totallyTimeSpent" value="49424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="28" width="1868" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17618002" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18276618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -288,7 +268,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3322546" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38727078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,7 +298,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/trie/Trie.java</url>
-          <line>90</line>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -345,41 +325,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trie/TrieNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/main/InputUI.form">
-      <provider editor-type-id="ui-designer" />
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trie/TrieNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/RunApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="70" lean-forward="true" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/DataHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="-176">
           <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -387,27 +351,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/InputUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/RunApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="165">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#414#1449#0" expanded="true" />
-            <element signature="e#656#664#0" expanded="true" />
-            <element signature="e#836#844#0" expanded="true" />
-            <element signature="e#1285#1293#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1941#2434#0" expanded="true" />
-            <element signature="e#2433#2434#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trie/Trie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="90" column="29" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
+        <state relative-caret-position="65">
+          <caret line="84" column="57" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/InputUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
