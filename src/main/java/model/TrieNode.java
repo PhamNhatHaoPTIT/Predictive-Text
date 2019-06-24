@@ -1,4 +1,4 @@
-package trie;
+package model;
 
 import java.util.HashMap;
 

@@ -1,7 +1,8 @@
-package main;
+package view;
 
-import trie.Trie;
-import trie.TrieNode;
+import model.BloomFilter;
+import model.Trie;
+import model.TrieNode;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 public class InputUI extends JFrame {
 
-    public InputUI(final Trie trie) {
+    public InputUI(final Trie trie, BloomFilter bloomFilter) {
         add(main_panel);
         setTitle("Predictive Text");
         setVisible(true);
@@ -30,7 +31,7 @@ public class InputUI extends JFrame {
                     ArrayList<String> result = new ArrayList<String>();
                     TrieNode temp = trie.searchNode(trie.getRoot(), txt_input.getText());
 
-                    if( temp != null ) {                            // found word in trie
+                    if( temp != null ) {                            // found word in model
                         trie.getAllWordsInNode(result, temp, txt_input.getText(), "");
                         words.setListData(result.toArray());
                     }
@@ -56,10 +57,23 @@ public class InputUI extends JFrame {
                 }
             }
         });
+        btn_search_bloom.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent mouseEvent) {
+                super.mouseClicked(mouseEvent);
+                String word = txt_input.getText();
+                if(bloomFilter.search(word)) {
+                    JOptionPane.showMessageDialog(main_panel, "Word found");
+                } else {
+                    JOptionPane.showMessageDialog(main_panel, "Word not found");
+                }
+            }
+        });
     }
 
     private JPanel main_panel;
     private JTextField txt_input;
     private JList words;
     private JButton btn_search;
+    private JButton btn_search_bloom;
 }

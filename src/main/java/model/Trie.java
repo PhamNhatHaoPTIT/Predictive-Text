@@ -1,4 +1,4 @@
-package trie;
+package model;
 
 import java.util.*;
 
@@ -29,7 +29,9 @@ public class Trie {
 
     public void insert(String word) {
         //HashMap<Character, TrieNode> children = root.children;
+
         TrieNode node = root;
+
         for(int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             TrieNode t;
@@ -45,6 +47,7 @@ public class Trie {
 //                t.isLeaf = true;
 //            }
         }
+
         node.isLeaf = true;
     }
 
@@ -72,23 +75,18 @@ public class Trie {
         }
     }
 
-    public boolean startWith(TrieNode root, String prefix) {
+    /*public boolean startWith(TrieNode root, String prefix) {
         if(searchNode(root, prefix) == null) {
             return false;
         } else {
             return true;
         }
-    }
+    }*/
 
    public void getAllWordsInNode(ArrayList<String> result, TrieNode trieNode, String prefix, String str) {
         TrieNode current = trieNode;
         if(trieNode.children == null || trieNode.children.isEmpty()) {
             return;
-        }
-        else{
-
-            System.out.println("ewouqeoiuq");
-            System.out.println(trieNode.children);
         }
 
         Iterator<TrieNode> iterator = current.children.values().iterator();

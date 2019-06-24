@@ -1,17 +1,20 @@
 package main;
 
-import trie.Trie;
-import utilities.DataHelper;
+import dao.WordDao;
+import dao.impl.WordDaoImpl;
+import model.BloomFilter;
+import model.Trie;
+import view.InputUI;
 
 public class RunApp {
 
     public static void main(String[] args) throws Exception {
 
-        DataHelper helper = new DataHelper();
         Trie trie = Trie.getInstance();
-        helper.readAllXmlFile("/home/cpu12457/Downloads/blogs", trie);
-
-        InputUI inputUI = new InputUI(trie);
+        BloomFilter bloomFilter = new BloomFilter(28, 8);
+        WordDao wordDao = new WordDaoImpl();
+        wordDao.insertWords("/home/cpu12457/Downloads/blog", trie, bloomFilter);
+        InputUI inputUI = new InputUI(trie, bloomFilter);
 
     }
 
